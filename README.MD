@@ -95,6 +95,7 @@ FATEC-ZONA-SUL/
 │   ├── quem-somos.html              # Página HTML — Quem Somos
 │   └── erro404.html                 # Página de erro para rotas não encontradas
 │
+├── Documentação.docx                # Documentação Técnica do Projeto
 ├── server.js                        # Servidor web em Node.js (sem frameworks)
 └── README.md                        # Documentação do projeto
 ```
