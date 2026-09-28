@@ -59,20 +59,40 @@ function readFile(response, file) {
 
 // Aplicação com callback
 let callback = function (request, response) {
+
   // Fazer o parse da URL
   let parts = url.parse(request.url);
   let caminho = parts.pathname;
 
-  // Página inicial
+  // Endpoints das páginas
   if (caminho === "/") {
     readFile(response, "index.html");
   }
-  
+
+  else if (caminho === "/curso") {
+    readFile(response, "curso.html");
+  }
+
+  else if (caminho === "/eventos") {
+    readFile(response, "eventos.html");
+  }
+
+  else if (caminho === "/infraestrutura") {
+    readFile(response, "infraestrutura.html");
+  }
+
+  else if (caminho === "/quem-somos") {
+    readFile(response, "quem-somos.html");
+  }
+
+  else if (caminho === "/vestibular") {
+    readFile(response, "vestibular.html");
+  }
+
   else {
-    // Tira a barra "/" inicial para encontrar arquivos corretamente
+    // Tenta encontrar arquivos como CSS, JS, imagens, etc.
     let arquivo = decodeURIComponent(caminho.substring(1));
 
-    // Ele vai procurar o arquivo solicitado dentro da pasta "public"
     readFile(response, arquivo);
   }
 };
