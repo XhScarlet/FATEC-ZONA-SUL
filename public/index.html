@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FATEC Zona Sul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="FATEC Zona Sul">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>FATEC<br />ZONA SUL</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <ul class="nav-links" id="primary-menu">
+          <li><a class="is-active" href="index.html">Início</a></li>
+          <li><a href="curso.html">Cursos</a></li>
+          <li><a href="vestibular.html">Vestibular</a></li>
+          <li><a href="infraestrutura.html">Infraestrutura</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-search" type="button" aria-label="Pesquisar"></button>
+          <a class="header-cta" href="https://vestibular.fatec.sp.gov.br/home/" target="_blank" rel="noopener noreferrer">Vestibular</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow mono">SÃO PAULO • SP</p>
+            <h1 id="hero-title">
+              CONSTRUINDO<br />
+              O <span>FUTURO</span><br />
+              ATRAVÉS DA<br />
+              TECNOLOGIA.
+            </h1>
+            <p class="hero-copy">Faculdade de Tecnologia<br />da Zona Sul de São Paulo.</p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="curso.html">Conheça nossos cursos <span aria-hidden="true">→</span></a>
+              <a class="btn btn-outline" href="https://vestibular.fatec.sp.gov.br/home/" target="_blank" rel="noopener noreferrer">Vestibular 2027 <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <aside class="hero-visual" aria-label="Imagem da FATEC Zona Sul">
+            <img src="assets/images/img-fatec.svg" alt="Prédio da FATEC Zona Sul" />
+            <div class="side-caption" aria-hidden="true">
+              <strong>01</strong>
+              <span>INÍCIO</span>
+              <b>FATEC<br />ZONA SUL</b>
+            </div>
+          </aside>
+
+          <div class="hero-stats" aria-label="Destaques">
+            <article>
+              <strong>04</strong>
+              <span>CURSOS SUPERIORES</span>
+            </article>
+            <article>
+              <img src="assets/icons/users.svg" alt="" />
+              <span>ENSINO PÚBLICO</span>
+            </article>
+            <article>
+              <img src="assets/icons/bar-chart.svg" alt="" />
+              <span>TECNOLOGIA E INOVAÇÃO</span>
+            </article>
+            <article>
+              <img src="assets/icons/map-pin.svg" alt="" />
+              <span>DOM PAULO<br />EVARISTO ARNS</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses section-pad" id="cursos" aria-labelledby="courses-title">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-kicker"><span>02</span> CURSOS</p>
+            <h2 id="courses-title">ESCOLHA O QUE<br />VOCÊ VAI <span>CONSTRUIR.</span></h2>
+            <p>Conheça os cursos da Fatec Zona Sul e encontre a formação que combina com seus objetivos.</p>
+          </div>
+          <div class="course-grid" id="course-grid"></div>
+        </div>
+      </section>
+
+      <section class="identity section-pad" id="identidade" aria-labelledby="identity-title">
+        <div class="container identity-grid">
+          <div class="section-intro">
+            <p class="section-kicker"><span>03</span> IDENTIDADE</p>
+            <h2 id="identity-title">MAIS QUE<br />UMA FACULDADE.<br />UM LUGAR PARA<br /><span>CONSTRUIR.</span></h2>
+            <p>Formação voltada para tecnologia, negócios e mercado de trabalho.</p>
+          </div>
+          <div class="mascot-wrap" aria-hidden="true">
+            <img src="assets/images/mascote-fatec-zonasul.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="vestibular section-pad" id="vestibular" aria-labelledby="vestibular-title">
+        <div class="container split-grid">
+          <div class="section-intro">
+            <p class="section-kicker"><span>04</span> VESTIBULAR</p>
+            <h2 id="vestibular-title">SUA PRÓXIMA<br />HISTÓRIA<br /><span>COMEÇA AQUI</span></h2>
+            <p>Confira as informações do processo seletivo, prazos, inscrições e orientações.</p>
+            <a class="btn btn-primary" href="https://vestibular.fatec.sp.gov.br/home/" target="_blank" rel="noopener noreferrer">Inscreva-se Aqui <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="steps-grid" id="steps-grid"></div>
+        </div>
+      </section>
+
+      <section class="events section-pad" id="eventos" aria-labelledby="events-title">
+        <div class="container split-grid">
+          <div class="section-intro">
+            <p class="section-kicker"><span>05</span> EVENTOS</p>
+            <h2 id="events-title">O QUE ESTÁ<br />ACONTECENDO<br /><span>POR AQUI?</span></h2>
+            <p>Acompanhe a programação de eventos, palestras, workshops e muito mais.</p>
+            <a class="btn btn-ghost" href="eventos.html">Ver todos os eventos <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="event-panel">
+            <div class="event-list" id="event-list"></div>
+            <article class="calendar-card" aria-label="Calendário de eventos">
+              <header>
+                <span>Setembro 2026</span>
+                <span>‹ ›</span>
+              </header>
+              <div class="calendar-grid" aria-hidden="true">
+                <b>D</b><b>S</b><b>T</b><b>Q</b><b>Q</b><b>S</b><b>S</b>
+                <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+                <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+                <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+                <span>27</span><span class="active">28</span><span>29</span><span>30</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="infrastructure section-pad" id="infraestrutura" aria-labelledby="infra-title">
+        <div class="container split-grid">
+          <div class="section-intro">
+            <p class="section-kicker"><span>06</span> INFRAESTRUTURA</p>
+            <h2 id="infra-title">CONHEÇA<br />NOSSO <span>CAMPUS</span></h2>
+            <p>Um espaço pensado para o aprendizado, tecnologia e colaboração.</p>
+            <a class="btn btn-ghost" href="infraestrutura.html">Explorar infraestrutura <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="infra-grid" id="infra-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand" href="index.html" aria-label="FATEC Zona Sul">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>FATEC<br />ZONA SUL</span>
+        </a>
+        <section>
+          <h2>Cursos</h2>
+          <ul>
+            <li><a href="curso.html">Análise e Desenvolvimento de sistemas.</a></li>
+            <li><a href="curso.html">Desenvolvimento de Software e Multiplataforma.</a></li>
+            <li><a href="curso.html">Gestão Empresarial.</a></li>
+            <li><a href="curso.html">Logística.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="quem-somos.html">Quem somos.</a></li>
+            <li><a href="infraestrutura.html">Infraestrutura.</a></li>
+            <li><a href="eventos.html">Eventos.</a></li>
+            <li><a href="quem-somos.html">Corpo Docente.</a></li>
+            <li><a href="quem-somos.html">Regulamento.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Secretaria</h2>
+          <ul>
+            <li><a href="vestibular.html">Matrícula.</a></li>
+            <li><a href="vestibular.html">Rematrícula.</a></li>
+            <li><a href="eventos.html#agenda">Calendário Acadêmico.</a></li>
+            <li><a href="vestibular.html">Transferência.</a></li>
+          </ul>
+        </section>
+        <section>
+          <div class="social-links">
+            <span class="social-link" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></span>
+            <span class="social-link" aria-label="Instagram"><img src="assets/icons/Instagram--Streamline-Core.svg" alt="" /></span>
+          </div>
+          <p>© Fatec Dom Paulo Evaristo Arns - ZONA SUL<br />Reestruturado por CodLab - alunos de DSM.</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

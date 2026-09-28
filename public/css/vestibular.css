@@ -1,0 +1,343 @@
+.vestibular-page {
+  background: #0c0d0f;
+}
+
+.vestibular-page .nav-links a[href="vestibular.html"]::after {
+  transform: scaleX(1);
+}
+
+.vest-hero,
+.vest-section,
+.vest-final {
+  padding: 32px 0;
+}
+
+.breadcrumb {
+  margin: 0 0 22px;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.vest-hero-grid,
+.vest-split {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.58fr) minmax(620px, 1.2fr);
+  align-items: start;
+  gap: 46px;
+}
+
+.vest-copy h1,
+.vest-section h2,
+.vest-final h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(44px, 4.03vw, 58px);
+  font-weight: 700;
+  line-height: 1.035;
+}
+
+.vest-copy h1 span,
+.vest-section h2 span,
+.vest-final h2 span,
+.vest-section .section-intro p span {
+  color: var(--color-primary);
+}
+
+.vest-copy > p:not(.breadcrumb):not(.section-kicker),
+.vest-section .section-intro > p:not(.section-kicker),
+.vest-final .section-intro > p {
+  margin: 24px 0 0;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.vest-external {
+  margin-top: 42px;
+  min-width: 234px;
+}
+
+.vest-hero-art img {
+  width: min(100%, 970px);
+}
+
+.process-art img {
+  width: min(100%, 829px);
+}
+
+.signup-panel {
+  display: grid;
+  gap: 30px;
+}
+
+.signup-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.signup-card {
+  min-height: 184px;
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: 24px 22px;
+  border: 1px solid rgba(245, 245, 245, 0.82);
+  border-radius: 10px;
+  background: rgba(8, 9, 11, 0.78);
+  clip-path: polygon(0 0, 88% 0, 100% 16%, 100% 100%, 12% 100%, 0 84%);
+  transition: transform var(--ease), border-color var(--ease);
+}
+
+.signup-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+
+.signup-card img {
+  width: 55px;
+  height: 55px;
+}
+
+.signup-card p {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.official-link {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  transition: background var(--ease), transform var(--ease);
+}
+
+.official-link:hover {
+  background: rgba(255, 36, 48, 0.12);
+  transform: translateY(-2px);
+}
+
+.vest-course-cards {
+  display: block;
+  margin-top: 6px;
+}
+
+.vest-course-art {
+  position: relative;
+  width: min(100%, 886px);
+}
+
+.vest-course-art > img {
+  width: 100%;
+}
+
+.course-hotspot {
+  position: absolute;
+  bottom: 10%;
+  width: 6%;
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.course-hotspot:hover,
+.course-hotspot:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.72);
+  outline-offset: 2px;
+}
+
+.course-hotspot-1 {
+  left: 20.4%;
+}
+
+.course-hotspot-2 {
+  left: 45.1%;
+}
+
+.course-hotspot-3 {
+  left: 69.8%;
+}
+
+.course-hotspot-4 {
+  left: 94.5%;
+  transform: translateX(-100%);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.48fr) minmax(620px, 1fr);
+  grid-template-areas:
+    "intro faq"
+    "banner banner";
+  align-items: start;
+  gap: 12px 48px;
+}
+
+.faq-layout .section-intro {
+  grid-area: intro;
+}
+
+.faq-layout .faq-grid {
+  grid-area: faq;
+}
+
+.faq-item {
+  border: 1px solid rgba(245, 245, 245, 0.85);
+  border-radius: 10px;
+  background: rgba(8, 9, 11, 0.64);
+}
+
+.faq-question {
+  width: 100%;
+  min-height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0 18px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.faq-icon {
+  flex: 0 0 auto;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 18px 18px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.faq-item.is-open {
+  border-color: var(--color-primary);
+}
+
+.faq-item.is-open .faq-answer {
+  display: block;
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.final-art {
+  grid-area: banner;
+  position: relative;
+  margin-top: 0;
+}
+
+.final-art img {
+  width: 100%;
+}
+
+.vest-final-link {
+  position: absolute;
+  left: clamp(38px, 7vw, 118px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(420px, 44%);
+  min-height: 64px;
+  display: block;
+  background: transparent;
+  color: transparent;
+  clip-path: polygon(7% 0, 100% 0, 89% 100%, 0 100%);
+  transition: background var(--ease), transform var(--ease), outline-color var(--ease);
+}
+
+.vest-final-link:hover {
+  background: rgba(255, 36, 48, 0.1);
+  transform: translateY(calc(-50% - 2px));
+}
+
+.vest-final-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1180px) {
+  .vest-hero-grid,
+  .vest-split,
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-layout {
+    grid-template-areas:
+      "intro"
+      "faq"
+      "banner";
+  }
+
+  .signup-steps,
+  .vest-course-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .official-link {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  .vest-hero,
+  .vest-section,
+  .vest-final {
+    padding: 36px 0;
+  }
+
+  .vest-copy h1,
+  .vest-section h2,
+  .vest-final h2 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+
+  .signup-steps,
+  .vest-course-cards,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .official-link {
+    padding: 14px;
+    font-size: 15px;
+    gap: 12px;
+  }
+
+  .vest-final-link {
+    left: 22px;
+    right: 22px;
+    width: auto;
+    min-height: 48px;
+  }
+}

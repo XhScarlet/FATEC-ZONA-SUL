@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos | FATEC Zona Sul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/eventos.css" />
+  </head>
+  <body class="events-page">
+    <header class="site-header" id="inicio">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="index.html" aria-label="FATEC Zona Sul">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>FATEC<br />ZONA SUL</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+          <span></span><span></span><span></span><span class="sr-only">Abrir menu</span>
+        </button>
+
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curso.html">Cursos</a></li>
+          <li><a href="vestibular.html">Vestibular</a></li>
+          <li><a href="infraestrutura.html">Infraestrutura</a></li>
+          <li><a class="is-active" href="eventos.html">Eventos</a></li>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-search" type="button" aria-label="Pesquisar"></button>
+          <a class="header-cta" href="https://vestibular.fatec.sp.gov.br/home/" target="_blank" rel="noopener noreferrer">Vestibular</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="events-hero" aria-labelledby="events-hero-title">
+        <div class="container events-hero-grid">
+          <div class="events-copy">
+            <p class="breadcrumb">Início &gt; Eventos</p>
+            <p class="section-kicker"><span>01</span> EVENTOS</p>
+            <h1 id="events-hero-title">CONHECIMENTO<br />QUE CONECTA<br /><span>PESSOAS.</span></h1>
+            <p>Palestras, workshops, semanas acadêmicas, visitas técnicas e muito mais.</p>
+            <a class="btn btn-ghost" href="#agenda">Ver próximos eventos <span aria-hidden="true">→</span></a>
+          </div>
+          <figure class="events-hero-art">
+            <img src="assets/fatec palco.svg" alt="Auditório da FATEC Zona Sul durante evento acadêmico" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="events-section featured-section" id="destaques" aria-labelledby="featured-title">
+        <div class="container events-split">
+          <div class="section-intro">
+            <p class="section-kicker"><span>02</span> DESTAQUES</p>
+            <h2 id="featured-title">EVENTOS EM<br /><span>EVIDÊNCIA.</span></h2>
+            <p>Confira os principais eventos que estão chegando na Fatec Zona Sul.</p>
+          </div>
+          <div class="featured-grid" id="featured-events"></div>
+        </div>
+      </section>
+
+      <section class="events-section horizons-section" id="proximos" aria-labelledby="horizons-title">
+        <div class="container events-split">
+          <div class="section-intro">
+            <p class="section-kicker"><span>03</span> PRÓXIMOS EVENTOS</p>
+            <h2 id="horizons-title">PARTICIPE E<br />EXPANDA<br />SEUS <span>HORIZONTES.</span></h2>
+            <p>Acompanhe a programação e participe de experiências que complementam a sua formação.</p>
+          </div>
+          <div class="horizons-panel">
+            <div class="event-filters" id="event-filters" aria-label="Filtros de eventos"></div>
+            <div class="agenda-list" id="agenda-list" aria-live="polite"></div>
+            <button class="all-events-link" type="button" id="all-events-link">
+              Ver todos os eventos em São Paulo <span aria-hidden="true">→</span>
+            </button>
+            <p class="events-feedback" id="events-feedback" role="status"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section calendar-section" id="agenda" aria-labelledby="calendar-title">
+        <div class="container events-split">
+          <div class="section-intro">
+            <p class="section-kicker"><span>04</span> CALENDÁRIO</p>
+            <h2 id="calendar-title">ACOMPANHE<br />NOSSA <span>AGENDA.</span></h2>
+            <p>Todos os eventos internos e externos organizados em um só lugar.</p>
+          </div>
+          <div class="calendar-layout">
+            <article class="events-calendar" aria-label="Calendário de outubro de 2026">
+              <header>
+                <span aria-hidden="true">◀</span>
+                <strong>Outubro 2026</strong>
+                <span aria-hidden="true">▶</span>
+              </header>
+              <div class="events-calendar-grid" aria-hidden="true">
+                <b>Dom</b><b>Seg</b><b>Ter</b><b>Qua</b><b>Qui</b><b>Sex</b><b>Sáb</b>
+                <span class="muted">27</span><span class="muted">28</span><span class="muted">29</span><span class="muted">30</span><span>1</span><span>2</span><span>3</span>
+                <span class="sunday">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                <span class="sunday">11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+                <span class="sunday">18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+                <span class="sunday">25</span><span>26</span><span>27</span><span>28</span><span class="active">29</span><span>30</span><span>31</span>
+              </div>
+            </article>
+            <article class="calendar-feature">
+              <h3>Eventos em <span>DESTAQUE</span></h3>
+              <div class="calendar-feature-content">
+                <div class="calendar-date">
+                  <strong>29</strong>
+                  <span>OUT</span>
+                </div>
+                <div>
+                  <h4>Sebrae Supernova</h4>
+                  <span class="status-pill">Inscrições encerradas</span>
+                  <p>
+                    Iniciativa do Sebrae voltada a transformar ideias acadêmicas de estudantes de ensino superior em
+                    startups reais e inovadoras.
+                  </p>
+                  <p>Conheça quais grupos e alunos das Fatecs estão participando.</p>
+                  <button class="mini-link" type="button" data-message="URL do Sebrae Supernova ainda não configurada.">Saiba Mais</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-final" aria-label="Comunidade acadêmica">
+        <div class="container">
+          <img src="assets/fundo estudantes.svg" alt="Estudantes em evento com composição futurista vermelha" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand" href="index.html" aria-label="FATEC Zona Sul">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>FATEC<br />ZONA SUL</span>
+        </a>
+        <section>
+          <h2>Cursos</h2>
+          <ul>
+            <li><a href="curso.html">Análise e Desenvolvimento de sistemas.</a></li>
+            <li><a href="curso.html">Desenvolvimento de Software e Multiplataforma.</a></li>
+            <li><a href="curso.html">Gestão Empresarial.</a></li>
+            <li><a href="curso.html">Logística.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="quem-somos.html">Quem somos.</a></li>
+            <li><a href="infraestrutura.html">Infraestrutura.</a></li>
+            <li><a href="eventos.html">Eventos.</a></li>
+            <li><a href="quem-somos.html">Corpo Docente.</a></li>
+            <li><a href="quem-somos.html">Regulamento.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Secretaria</h2>
+          <ul>
+            <li><a href="vestibular.html">Matrícula.</a></li>
+            <li><a href="vestibular.html">Rematrícula.</a></li>
+            <li><a href="eventos.html#agenda">Calendário Acadêmico.</a></li>
+            <li><a href="vestibular.html">Transferência.</a></li>
+          </ul>
+        </section>
+        <section>
+          <div class="social-links">
+            <span class="social-link" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></span>
+            <span class="social-link" aria-label="Instagram"><img src="assets/icons/Instagram--Streamline-Core.svg" alt="" /></span>
+          </div>
+          <p>© Fatec Dom Paulo Evaristo Arns - ZONA SUL<br />Reestruturado por CodLab - alunos de DSM.</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="js/eventos.js"></script>
+  </body>
+</html>

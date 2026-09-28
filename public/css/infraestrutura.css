@@ -1,0 +1,256 @@
+.infra-page {
+  background: var(--color-background);
+}
+
+.infra-page main {
+  overflow: hidden;
+}
+
+.infra-page .nav-links a[href="infraestrutura.html"]::after {
+  transform: scaleX(1);
+}
+
+.infra-hero,
+.infra-section {
+  padding: clamp(44px, 5.6vw, 72px) 0;
+}
+
+.infra-hero {
+  padding-top: 46px;
+}
+
+.infra-hero-grid,
+.infra-split,
+.infra-final-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.46fr) minmax(640px, 1fr);
+  gap: clamp(34px, 5vw, 76px);
+  align-items: center;
+}
+
+.infra-copy h1,
+.infra-section h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: clamp(44px, 4.03vw, 58px);
+  line-height: 1.035;
+  letter-spacing: 0;
+}
+
+.infra-copy h1 span,
+.infra-section h2 span {
+  color: var(--color-primary);
+}
+
+.infra-copy > p:not(.section-kicker),
+.infra-section .section-intro > p:not(.section-kicker) {
+  max-width: 378px;
+  margin: 24px 0 0;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.infra-hero-art {
+  margin: 0;
+}
+
+.infra-hero-art img {
+  width: min(100%, 881px);
+  margin-left: auto;
+}
+
+.spaces-art {
+  margin: 0;
+}
+
+.spaces-art img {
+  width: min(100%, 897px);
+  margin-left: auto;
+}
+
+.campus-title-block {
+  margin-bottom: 32px;
+}
+
+.campus-gallery-grid {
+  width: min(100%, 1139px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.campus-card {
+  position: relative;
+  min-height: 244px;
+  overflow: hidden;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  background: #08090b;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(255, 36, 48, 0.24);
+  clip-path: polygon(5% 0, 44% 0, 48% 5%, 100% 5%, 100% 88%, 94% 100%, 0 100%, 0 12%);
+}
+
+.campus-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 9, 11, 0.02) 45%, rgba(8, 9, 11, 0.78));
+  pointer-events: none;
+}
+
+.campus-card > img {
+  width: 100%;
+  height: 100%;
+  min-height: 244px;
+  object-fit: cover;
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.campus-card span {
+  position: absolute;
+  left: 16px;
+  bottom: 13px;
+  z-index: 1;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-shadow: 0 2px 10px #000;
+}
+
+.campus-card button {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background: rgba(8, 9, 11, 0.6);
+  color: #fff;
+  cursor: pointer;
+  transition: transform var(--ease), background var(--ease);
+}
+
+.campus-card:hover > img,
+.campus-card:focus-visible > img {
+  transform: scale(1.025);
+  filter: saturate(1.1) brightness(1.05);
+}
+
+.campus-card:hover button,
+.campus-card:focus-visible button {
+  transform: translate(3px, -3px);
+  background: var(--color-primary);
+}
+
+.infra-final {
+  padding-top: 18px;
+}
+
+.courses-banner {
+  display: block;
+  width: min(100%, 1078px);
+  cursor: pointer;
+  transition: transform var(--ease), filter var(--ease);
+}
+
+.courses-banner img {
+  width: 100%;
+}
+
+.courses-banner:hover,
+.courses-banner:focus-visible {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox figure {
+  width: min(100%, 980px);
+  margin: 0;
+  border: 1px solid var(--color-primary);
+  background: #08090b;
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+}
+
+.lightbox figcaption {
+  padding: 14px 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  background: #08090b;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .infra-hero-grid,
+  .infra-split,
+  .infra-final-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .infra-hero-art img,
+  .courses-banner {
+    margin-inline: auto;
+  }
+
+  .spaces-art img {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .infra-hero,
+  .infra-section {
+    padding-block: 42px;
+  }
+
+  .infra-copy h1,
+  .infra-section h2 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+
+  .campus-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-card,
+  .campus-card > img {
+    min-height: 205px;
+  }
+}

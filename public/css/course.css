@@ -1,0 +1,487 @@
+.course-page {
+  background: var(--color-background);
+}
+
+.course-page main {
+  overflow: hidden;
+}
+
+.course-page .nav-links a[href="curso.html"]::after {
+  transform: scaleX(1);
+}
+
+.course-hero {
+  padding: 28px 0 24px;
+}
+
+.breadcrumb {
+  margin: 0 0 34px;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.course-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(430px, 0.72fr) minmax(560px, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.course-hero-copy h1,
+.course-section h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: clamp(44px, 4.03vw, 58px);
+  line-height: 1.035;
+  letter-spacing: 0;
+}
+
+.course-hero-copy h1 span,
+.course-section h2 span {
+  color: var(--color-primary);
+}
+
+.course-hero-copy > p:not(.section-kicker) {
+  margin: 24px 0 0;
+  max-width: 320px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.course-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 42px;
+}
+
+.course-actions .btn-primary {
+  min-width: 242px;
+}
+
+.course-actions .btn-ghost {
+  min-width: 234px;
+}
+
+.course-switcher {
+  position: relative;
+}
+
+.course-menu-toggle {
+  gap: 34px;
+}
+
+.course-menu-toggle img {
+  width: 28px;
+  height: 28px;
+}
+
+.course-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  z-index: 5;
+  width: min(320px, calc(100vw - 48px));
+  padding: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  background: rgba(8, 9, 11, 0.98);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.38);
+}
+
+.course-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 18px;
+  transition: background var(--ease), color var(--ease);
+}
+
+.course-menu a:hover,
+.course-menu a.is-current {
+  background: rgba(255, 36, 48, 0.12);
+  color: var(--color-primary);
+}
+
+.course-menu a.is-current::after {
+  content: "Atual";
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.course-hero-image {
+  margin: -10px 0 0;
+  min-width: 0;
+}
+
+.course-hero-image img {
+  width: min(100%, 761px);
+  margin-left: auto;
+}
+
+.course-info-grid {
+  display: grid;
+  grid-template-columns: 252px 252px 290px 252px;
+  gap: clamp(28px, 4.7vw, 66px);
+  margin-top: 46px;
+}
+
+.course-info-grid article {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid rgba(217, 217, 217, 0.25);
+  border-radius: var(--radius);
+  background: rgba(8, 9, 11, 0.25);
+}
+
+.course-info-grid img {
+  width: 55px;
+  height: 55px;
+  flex: 0 0 auto;
+}
+
+.course-info-grid h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.course-info-grid p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.course-section {
+  padding: 18px 0 18px;
+}
+
+.about-grid,
+.learn-grid,
+.curriculum-grid,
+.market-grid {
+  display: grid;
+  grid-template-columns: minmax(430px, 500px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.course-section .section-intro > p:not(.section-kicker) {
+  max-width: 520px;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: minmax(330px, 1fr) 225px;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 7px;
+}
+
+.about-card > img {
+  width: 100%;
+  align-self: center;
+}
+
+.about-card-text {
+  min-height: 232px;
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--color-primary);
+  border-radius: 0 18px 18px 0;
+  background: rgba(8, 9, 11, 0.86);
+}
+
+.about-card-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.about-card-text ul {
+  display: grid;
+  gap: 8px;
+}
+
+.about-card-text li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.about-card-text span {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px 26px;
+  margin-top: 15px;
+}
+
+.tech-card {
+  position: relative;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  background: rgba(8, 9, 11, 0.92);
+  transition: transform var(--ease), background var(--ease), box-shadow var(--ease);
+}
+
+.tech-card {
+  height: 142px;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 13px;
+  align-items: center;
+  padding: 16px 14px;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  background: rgba(227, 6, 19, 0.08);
+  box-shadow: 0 16px 34px rgba(227, 6, 19, 0.14);
+}
+
+.tech-card img {
+  width: 55px;
+  height: 55px;
+}
+
+.tech-card h3 {
+  margin: 0 0 9px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.tech-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.curriculum-section {
+  padding-top: 34px;
+}
+
+.curriculum-section .btn-ghost {
+  margin-top: 22px;
+  min-width: 233px;
+}
+
+.curriculum-panel {
+  position: relative;
+  width: min(818px, calc(100vw - 96px));
+  min-height: 390px;
+}
+
+.semester-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  margin-bottom: 34px;
+}
+
+.semester-tab {
+  min-width: 133px;
+  min-height: 36px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-text);
+  padding: 7px 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background var(--ease), transform var(--ease);
+}
+
+.semester-tab.is-active {
+  background: var(--color-primary);
+  font-weight: 700;
+}
+
+.semester-tab:hover {
+  transform: translateY(-2px);
+}
+
+.discipline-board {
+  position: relative;
+  width: min(100%, 628px);
+  min-height: 265px;
+  padding: 24px 34px;
+}
+
+.discipline-frame {
+  position: absolute;
+  inset: 0;
+  width: 628px;
+  height: 265px;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.discipline-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 22px;
+}
+
+.discipline-list li {
+  position: relative;
+  padding-left: 16px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.discipline-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.code-mark {
+  position: absolute;
+  right: -22px;
+  bottom: -6px;
+  width: 261px;
+  max-width: 32%;
+  filter: drop-shadow(0 0 18px rgba(255, 36, 48, 0.22));
+}
+
+.market-section {
+  padding-top: 20px;
+  padding-bottom: 44px;
+}
+
+.market-panel {
+  position: relative;
+  min-height: 270px;
+}
+
+.market-panel > img {
+  width: 100%;
+  max-width: 809px;
+  height: auto;
+}
+
+@media (max-width: 1180px) {
+  .course-hero-grid,
+  .about-grid,
+  .learn-grid,
+  .curriculum-grid,
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-text {
+    border-radius: 10px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .code-mark {
+    right: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .course-hero {
+    padding-top: 24px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .course-hero-copy h1,
+  .course-section h2 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+
+  .course-actions,
+  .course-info-grid,
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-info-grid,
+  .tech-grid {
+    display: grid;
+  }
+
+  .course-info-grid article {
+    min-height: 72px;
+  }
+
+  .course-info-grid h2,
+  .course-info-grid p {
+    font-size: 16px;
+  }
+
+  .tech-card {
+    min-height: 120px;
+  }
+
+  .semester-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .semester-tab {
+    flex: 1 1 140px;
+  }
+
+  .discipline-board {
+    padding: 22px 20px;
+  }
+
+  .discipline-list li {
+    font-size: 14px;
+  }
+
+  .code-mark {
+    display: none;
+  }
+
+  .market-panel {
+    min-height: auto;
+  }
+}
