@@ -26,7 +26,7 @@ Se aparecer um número de versão (ex: `v20.11.0`), está pronto. Caso contrári
 
 **Via Git:**
 ```bash
-git clone https://github.com/seu-usuario/FATEC-ZONA-SUL.git
+git clone https://github.com/XhScarlet/FATEC-ZONA-SUL.git
 ```
 
 **Ou baixe o ZIP** pelo GitHub e extraia na sua máquina.
